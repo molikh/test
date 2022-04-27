@@ -1,0 +1,55 @@
+@import "../../assets/scss/typography.scss";
+
+.wp-recent-posts {
+	margin-top: 50px;
+
+	.wp-header {
+		position: relative;
+		font-weight: 700;
+		@include font-size(24);
+
+		&:after {
+			content: "";
+			background: green;
+			width: 100px;
+			height: 3px;
+			position: absolute;
+			bottom: 5px;
+			left: calc(50% - 50px);
+		}
+	}
+
+	.wp-post {
+		height: 100%;
+		box-shadow: 0 3px 20px rgba(0, 0, 0, 0.062);
+		border-radius: 20px;
+		flex: calc(33% - 30px);
+		margin: 0 15px;
+		border: 1px solid rgba(0, 0, 0, 0.062);
+		transition: 300ms;
+
+		&:hover {
+			box-shadow: 0 3px 30px rgba(0, 0, 0, 0.162);
+		}
+
+		.post-content {
+		}
+
+		.actions {
+			@include font-size(14);
+		}
+	}
+
+	.wp-post-link {
+		@include font-size(24);
+		&:hover {
+			text-decoration: underline;
+			color: rgb(12, 50, 163);
+		}
+	}
+	.post-image {
+		border-radius: 20px;
+		max-width: 100%;
+		height: 100%;
+	}
+}

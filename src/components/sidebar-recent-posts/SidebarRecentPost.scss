@@ -1,0 +1,31 @@
+@import "../../assets/scss/typography.scss";
+
+.wp-tribe-recent-posts {
+	margin-top: 50px;
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.062);
+	border-radius: 20px;
+	margin-left: auto;
+	margin-right: 0;
+
+	.wp-header {
+		position: relative;
+		font-weight: 700;
+		@include font-size(24);
+
+		&:after {
+			content: "";
+			background: green;
+			width: 100px;
+			height: 3px;
+			position: absolute;
+			bottom: 5px;
+			left: calc(50% - 50px);
+		}
+	}
+	.wp-post-link {
+		&:hover {
+			text-decoration: underline;
+			color: rgb(12, 50, 163);
+		}
+	}
+}
