@@ -26,7 +26,6 @@ function RecentPosts() {
 				Recent Tribe Posts
 			</h1>
 			{posts.map((post, i) => {
-				console.log(post);
 				return (
 					<div
 						className={

@@ -24,7 +24,6 @@ function SidebarRecentPost() {
 				Recent Tribe Posts
 			</h1>
 			{posts.map((post, i) => {
-				console.log(post);
 				return (
 					<div className="flex  mb-8" key={post?.id}>
 						<div className="flex flex-col flex-grow">

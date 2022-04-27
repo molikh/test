@@ -26,7 +26,6 @@ function SidebarRecentPost() {
 				Recent Tribe Posts
 			</h1>
 			{posts.map((post, i) => {
-				console.log(post);
 				return (
 					<div className="flex  mb-8" key={post?.id}>
 						<img className="post-image mt-1 mr-3" src={image} alt="sample" />
